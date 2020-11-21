@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 10.13.0
+install:
+  - npm install
+script:
+  - npm run test
+branches:
+  only:
+    - develop
+deploy:
+  provider: heroku
+  api_key:
+    secure: ADD_API_KEY_HERE
+  app:
+    master: techladies-ci-cd-2020-prod
+    develop: techladies-ci-cd-2020-staging
