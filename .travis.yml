@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-  - 10.13.0
+- 10.13.0
 install:
-  - npm install
+- npm install
 script:
-  - npm run test
+- npm run test
 branches:
   only:
-    - develop
+  - develop
 deploy:
   provider: heroku
   api_key:
-    secure: "1gK5swh4yDI1t8HkoPgvW0HcpfQpxN92m6rLfQawyKyUHcFITd2MOwArGLirprg+N6IYgKYVnwMcYcAy6gyRt9f7vkbMbR4rWBedmRjkkRR7gLwmmQe7kRhHeVacN4BQXCcylZ2NSMZYWJb1fXvFQpphMruli8X5/RFOS4HPAea4jAEEzrWcFimRHfVwXSfGy5U1KgieiDrzOwzfK7zLd8jG4rtTtG4H78ldgjvBdA1dPbXHyrMWrrINTf5hOAYWfTo0EpKylkkw0GOO66xxVf1qye75IS4osfNCexoshibCjHEwyfHMpxM+XnRe+nhe3YchwC/XS7vYa6WnfgF4fmLKcReq5DvudK3fha/hIAv93X70FPInKDhyXnSIrd2/eOUhPOs9XHDtK1g6uFvAOzjMHvZVBs41K1S+9HQnPnSRMfzCPfE5JuVZO/McTpQAGzXKwkJziAXm0YqC5+kg9UilaceHbmAuSpIeDygnwRGeAAVHHDvA40CGWkaX+PGXlC2S4v8N60hioM/q5+5QIhtquBdfThoerGkV02QZ4kj6uSVx7wIM6xT6hg4dtXX3SmDCGOGZZLoA2djswnDg9fFDHQuzybn/8/NFJJL1oruteHtrQvUgz7UXRkrQkIKALMx1e91H1mLjBfLBuxQrrGmltZ5g9RkR9HvJHsDgktM="
+    secure: MGV50kJhkLZcOQcY9Ty5FhG7mY2E6ok729ZCJ7CG3fchW4pdMYWWjvFb6bobDBTvjxevQj95oybpMg5GliTFvvQblUbXTmRaCzlFravYRmimeZaHYv0h3EkasE1G6/5A8JtqYgrHIdt4WihTxwe9sjPhdxsyyCM63LAAQi9rPi/5pifsAlPVMJ4dFYMpWbqBmEeSmTIOPTzowV3NI8ASV3351M/WhYb6YJs6ysQ6MbHrBWnX+ocMYJPxGiikwWWiKHypKcyI81VCQQd/RdFXSyHDrlPHN3UBHkf6237DsNznUoAWoM9faK9W3xx/HMwUUWzu31YTNK+PaaM4vUv8G+PXNU6tbqn/VduUlOwDdnbwFiE9I5OcZDXUNzynCZMr5DDUdKM9mR+cXtKMzqrd2Sbf5VI5yBlhO8u1DYqa141PiNTCm9mJeoqy8yzxXAmYX8Q3Upx+QQt1demK/n3+ibb4SAVZoWJd0rwqqQlQEWIgx77lsZLx1aWWQeUE1zufjqZperebBIxyQwhpna/l+HGwSdqHz/IFdYWMcW0P4Hh2uvddWuf91S69pXGPBMc6ZOuGoP1SyZeUoCWdMHQmDe7XbADOCN8ETOuaP23TBPISJ7ppkMimO3JsV+JCAkwrRbtSj3/oatrkkiqfkgSQAA3eR10NriCJEoLkYe+XXXw=
   app:
     develop: techladies-ci-cd-2020-staging
