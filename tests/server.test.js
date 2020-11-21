@@ -10,4 +10,8 @@ describe('GET /', () => {
   })
 })
 
+app.get('/:name', (req, res) => {
+  res.json(`Hello ${req.params.name}!`)
+})
+
 afterAll(async () => { await app.close() })
