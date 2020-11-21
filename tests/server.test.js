@@ -1,4 +1,5 @@
-    const request = require('supertest')
+
+const request = require('supertest')
 const app = require('../server')
 
 describe('GET /', () => {
